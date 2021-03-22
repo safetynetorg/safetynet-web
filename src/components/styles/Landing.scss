@@ -49,26 +49,72 @@ input[name=email] {
 }
 
 .frame2 {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 520px;
+    float: left;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFBEED;
 }
 
 .textP {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 500px;
+    margin-right: 50px;
+    margin-top: 20px;
+    float: right;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 hr {
     border: 2px solid $primary;
-    width: 50%;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+    .frame2 {
+        width: 50%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #FFBEED;
+    }
+    .textP {
+        width: 70%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-size: 16px;
+    }
+    hr {
+        border: 2px solid $primary;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .textH1 {
+        font-size: 22px;
+    }
+    .topText {
+        color: white;
+        width: 80%;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    .frame1 {
+        width: 30%;
+        float: right;
+        margin: 20px 40px 10px 10px;
+    }
 }
