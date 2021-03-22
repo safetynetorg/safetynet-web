@@ -3,7 +3,7 @@ $secondary: #89CFF0;
 $highlight: #FB7878;
 $splash: #FFCA0D;
 
-.NavbarItems {
+.nav-bar-items {
     background: transparent;
     height: 80px;
     display: flex;
@@ -60,7 +60,7 @@ $splash: #FFCA0D;
 }
 
 @media screen and (max-width: 1060px) {
-    .NavbarItems {
+    .nav-bar-items {
         position: relative;
     }
 

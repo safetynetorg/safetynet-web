@@ -2,7 +2,7 @@ import React from 'react'
 import frame1 from '../../assets/frame1.svg'
 import frame2 from '../../assets/frame2.svg'
 import frame4 from '../../assets/frame4.svg'
-import '../styles/Landing.scss'
+import '../styles/landing.scss'
 
 export default function Landing() {
     const [email, setEmail] = React.useState('')

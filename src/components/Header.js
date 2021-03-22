@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/Header.scss'
+import './styles/header.scss'
 
 class Header extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Header extends Component {
     }
     render() {
         return(
-            <nav className="NavbarItems">
+            <nav className="nav-bar-items">
                 <a href={"/"} style={{textDecoration : "none"}}><h1 className="navbar-logo">SAFETY NET</h1></a>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}/>

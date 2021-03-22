@@ -22,7 +22,7 @@ $splash: #FFCA0D;
 }
 
 input[name=email] {
-    width: 70%;
+    width: 50%;
     padding: 10px 20px;
     margin: 10px 0px;
     background: #FFCA0D;
@@ -35,7 +35,7 @@ input[name=email] {
 
 .sign-up {
     color: black;
-    padding: 6px 12px;
+    padding: 10px 12px;
     margin-left: 10px;
     background: #FFCA0D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -44,8 +44,8 @@ input[name=email] {
 }
 
 .sign-up:hover {
+    cursor: pointer;
     background: #fddc64;
-    padding: 8px 12px;
 }
 
 .frame2 {

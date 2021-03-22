@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Landing from './pages/Landing.js'
-import Header from './Header'
-import './styles/App.scss'
+import Landing from './pages/landing.js'
+import Header from './header'
+import './styles/app.scss'
 
 function App() {
   return (
