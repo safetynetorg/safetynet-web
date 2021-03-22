@@ -1,6 +1,7 @@
 import React from 'react'
 import frame1 from '../../assets/frame1.svg'
 import frame2 from '../../assets/frame2.svg'
+import frame4 from '../../assets/frame4.svg'
 import '../styles/Landing.scss'
 
 export default function Landing() {
@@ -8,6 +9,7 @@ export default function Landing() {
     return (
         <div>
             <img className="frame1" src={frame1} alt="Frame1" />
+            <img className="frame4" src={frame4} alt="Frame4" />
             <div className='topText'>
                 <h1 className='textH1'>Help make the world a safer place with Safety Net</h1>
                 <input
