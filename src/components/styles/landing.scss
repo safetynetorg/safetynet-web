@@ -182,12 +182,11 @@ hr {
     margin-bottom: 50px;
 }
 
-
-input[name=name], [name=email], textarea[name=question] {
+@mixin input-style{
     width: 100%;
     padding: 1rem 2rem;
     margin-top: 10px;
-    display: block;
+    display: inblock;
     margin-left: auto;
     margin-right: auto;
     background: #FFCA0D;
@@ -197,9 +196,18 @@ input[name=name], [name=email], textarea[name=question] {
     box-sizing: border-box;
 }
 
+input[name=name], [name=email]{
+    @include input-style();
+}
+
+textarea[name=question]{
+    @include input-style();
+    height: 15rem;
+}
+
 
 .send-message {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     width: 100%;
     display: block;
     margin-left: auto;
@@ -214,7 +222,7 @@ input[name=name], [name=email], textarea[name=question] {
 
 .send-message:hover {
     box-shadow: 0 0 0 2px $highlight;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     background: $secondary;
 }
 
