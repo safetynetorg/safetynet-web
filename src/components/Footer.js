@@ -1,6 +1,6 @@
 import React from 'react'
 import frame7 from '../assets/frame7.svg'
-import './styles/Footer.scss'
+import './styles/footer.scss'
 
 export default function Footer() {
     return (
