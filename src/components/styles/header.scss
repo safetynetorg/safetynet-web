@@ -40,6 +40,9 @@ $splash: #FFCA0D;
     background-color: $highlight;
     border-radius: 0.4rem;
     transition: all 0.2s ease-out;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
 }
 
 .fa-bars {
