@@ -87,29 +87,30 @@ export default function Landing() {
                     <h1 className='text-h1'>HAVE ANY QUESTIONS?</h1>
                 </div>
                 <Col lg={4}>
-                    <input
-                        name="name"
-                        placeholder="NAME"
-                        value={name}
-                        onChange={e => setName(e.target.value)}
-                        required
-                    />
-                    <input
-                        name="email"
-                        placeholder="EMAIL"
-                        value={email}
-                        onChange={e => setEmail(e.target.value)}
-                        required
-                    />
-                    <textarea
-                        name="question"
-                        placeholder="QUESTIONS"
-                        value={question}
-                        onChange={e => setQuestion(e.target.value)}
-                        required
-                    />
-                    <br />
-                    <button className='send-message'>SEND MESSAGE</button>
+                    <form>
+                        <input
+                            name="name"
+                            placeholder="NAME"
+                            value={name}
+                            onChange={e => setName(e.target.value)}
+                            required
+                        />
+                        <input
+                            name="email"
+                            placeholder="EMAIL"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                            required
+                        />
+                        <textarea
+                            name="question"
+                            placeholder="QUESTIONS"
+                            value={question}
+                            onChange={e => setQuestion(e.target.value)}
+                            required
+                        />
+                        <button className='send-message mt-3'>SEND MESSAGE</button>
+                    </form>
                 </Col>
                 <Col lg={6}>
                     <img className="frame6" src={frame6} alt="Frame6" />
