@@ -42,19 +42,19 @@ export default function Landing() {
                 </Col>
             </Row>
             <div className='buffer'></div>
-            <Row>
+            <Row className='justify-content-around'>
                 <br />
                 <div className='how-it-works mb-4'>
                     <h1 className='text-h1'>How it works</h1>
                     <hr />
                 </div>
-                <Col md={6}>
+                <Col md={5}>
                     <img className="frame2" src={frame2} alt="Frame2" />
                 </Col>
                 <Col md={6}>
                     <p className='text-p'>
                         If you ever come into a situation where you need immediate help from people around you but you can't reach them by yelling?
-                        Safety Net is an app that alerts everyone in a 200m radius around you. It will show them your approximate location
+                        Safetynet is an app that alerts everyone in a 200m radius around you. It will show them your approximate location
                         so you can get the immediate help you need.
                     </p>
                     <br />

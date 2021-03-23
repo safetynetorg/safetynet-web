@@ -26,7 +26,7 @@ class Header extends Component {
     render() {
         return(
             <nav className="nav-bar-items">
-                <a href={"/"} style={{textDecoration : "none"}}><h1 className="navbar-logo">SAFETY NET</h1></a>
+                <a href={"/"} style={{textDecoration : "none"}}><h1 className="navbar-logo">SAFETYNET</h1></a>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>

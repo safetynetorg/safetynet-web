@@ -45,28 +45,27 @@ input[name=signUp] {
 }
 
 .sign-up {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     color: black;
     padding: 0.8rem 1rem;
     margin-left: 0.9rem;
     background: $splash;
+    user-select: none;
     box-shadow: $dark-outer-shadow;
     border-radius: 0.7rem;
     border: 1px solid #ccc;
 }
 
 .sign-up:hover {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
-    background: #fddc64;
+    background: $secondary;
 }
 
 .frame2 {
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 1.7rem;
-    background-color: $primary;
 }
 
 .how-it-works {
@@ -199,7 +198,7 @@ input[name=name], [name=email], textarea[name=question] {
 
 
 .send-message {
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     width: 100%;
     display: block;
     margin-left: auto;
@@ -213,8 +212,8 @@ input[name=name], [name=email], textarea[name=question] {
 }
 
 .send-message:hover {
-    transition: all 0.5s ease;
-    background: #f88585;
+    transition: all 1s ease;
+    background: $secondary;
 }
 
 //
