@@ -5,9 +5,6 @@ $splash: #FFCA0D;
 
 .top-text {
     color: white;
-    width: 42%;
-    padding-top: 20px;
-    padding-left: 100px;
 }
 
 .text-h1 {
@@ -22,7 +19,7 @@ $splash: #FFCA0D;
 }
 
 input[name=email] {
-    width: 50%;
+    width: 65%;
     padding: 10px 20px;
     margin: 10px 0px;
     background: #FFCA0D;
@@ -49,17 +46,22 @@ input[name=email] {
 }
 
 .frame2 {
-    width: 40%;
-    float: left;
+    width: 90%;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
     background-color: #FFBEED;
 }
 
+.how-it-works {
+    margin-top: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
 .text-p {
-    width: 46%;
+    width: 90%;
     margin-right: 50px;
     margin-top: 20px;
     float: right;
@@ -112,8 +114,7 @@ hr {
 @media screen and (max-width: 1150px) {
     .frame2 {
         display: block;
-        width: 75%;
-        float: none;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
@@ -121,9 +122,10 @@ hr {
         background-color: #FFBEED;
     }
     .text-p {
-        width: 70%;
+        width: 90%;
         display: block;
         float: none;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         color: white;
@@ -138,7 +140,7 @@ hr {
         margin-bottom: 10px;
     }
     .text-h1 {
-        font-size: 22px;
+        font-size: 32px;
     }
     .top-text {
         color: white;
@@ -147,18 +149,10 @@ hr {
         padding-left: 100px;
     }
     .frame1 {
-        width: 27%;
-        float: right;
-        margin: 20px 40px 10px 10px;
+        width: 20rem;
     }
     .sign-up {
-        margin-left: 0px;
-    }
-}
-
-@media screen and (min-width: 1650px) {
-    .text-p {
-        font-size: 32px;
+        margin-left: 10px;
     }
 }
 
