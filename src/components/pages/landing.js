@@ -10,14 +10,14 @@ import '../styles/landing.scss'
 export default function Landing() {
     const [email, setEmail] = React.useState('')
     return (
-        <Container>
+        <Container fluid style={{'marginTop': '5.5rem'}}>
             <img className="frame4-move" src={frame4} alt="Frame4" />
             <img className="frame4-move2" src={frame4} alt="Frame4" />
             <img className="frame4-move3" src={frame4} alt="Frame4" />
-            <Row>
-                <Col md={6}>
+            <Row className="justify-content-around">
+                <Col md={4} className='mb-5'>
                     <div className='top-text'>
-                        <h1 className='text-h1'>Help make the world a safer place with Safety Net</h1>
+                        <h1 className='text-h1'>Help make the world a safer place with Safetynet</h1>
                         <input
                         name="email"
                         placeholder="Email Address"
@@ -27,16 +27,18 @@ export default function Landing() {
                         />
                         <button className='sign-up'>Sign up</button>
                     </div>
-                </Col>
-                <Col md={2}>
+                    <div>
+                        <h5 className='text-highlight'>Signup for our newsletter</h5>
+                    </div>
                 </Col>
                 <Col md={4}>
                     <img className="frame1" src={frame1} alt="Frame1" />
                 </Col>
             </Row>
+            <div className='buffer'></div>
             <Row>
                 <br/>
-                <div className='how-it-works'>
+                <div className='how-it-works mb-4'>
                     <h1 className='text-h1'>How it works</h1>
                     <hr/>
                 </div>
@@ -46,8 +48,8 @@ export default function Landing() {
                 <Col md={6}>
                     <p className='text-p'>
                         If you ever come into a situation where you need immediate help from people around you but you can't reach them by yelling?
-                        Safety Net is an app that alerts everyone in a 200m radius around you. It will show them your exact location and a description
-                        of you so you can get the immediate help you need. <span style={{color:'red'}}>(This isn't a replacement for 911)</span>
+                        Safety Net is an app that alerts everyone in a 200m radius around you. It will show them your approximate location 
+                        so you can get the immediate help you need.
                     </p>
                     <br/>
                 </Col>

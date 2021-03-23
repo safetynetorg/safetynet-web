@@ -2,87 +2,94 @@ $primary: #FFBEED;
 $secondary: #89CFF0;
 $highlight: #FB7878;
 $splash: #FFCA0D;
+$light-outer-shadow: 1px 2px 4px lightgrey;
+$dark-outer-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+.container-fluid{
+    max-width: 90%;
+}
+
+.text-highlight{
+    color: $highlight;
+}
 
 .top-text {
     color: white;
 }
 
 .text-h1 {
-    font-size: 48px;
+    font-size: 4rem;
     color: white;
 }
 
 .frame1 {
-    width: 330px;
+    width: 100%;
     float: right;
-    margin: 20px 100px 10px 10px;
 }
 
 input[name=email] {
-    width: 65%;
-    padding: 10px 20px;
+    width: 64%;
+    padding: 0.8rem 1.3rem;
     margin: 10px 0px;
-    background: #FFCA0D;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: $splash;
+    box-shadow: $dark-outer-shadow;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .sign-up {
+    transition: all 1s ease;
     color: black;
-    padding: 10px 12px;
-    margin-left: 10px;
-    background: #FFCA0D;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    margin-left: 0.9rem;
+    background: $splash;
+    box-shadow: $dark-outer-shadow;
+    border-radius: 0.7rem;
     border: 1px solid #ccc;
 }
 
 .sign-up:hover {
+    transition: all 1s ease;
     cursor: pointer;
     background: #fddc64;
 }
 
 .frame2 {
     width: 90%;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #FFBEED;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1.7rem;
+    background-color: $primary;
 }
 
 .how-it-works {
-    margin-top: 5rem;
     text-align: center;
     width: 100%;
 }
 
 .text-p {
-    width: 90%;
-    margin-right: 50px;
-    margin-top: 20px;
     float: right;
     color: white;
     font-size: 1.6rem;
 }
 
 hr {
-    border: 2px solid $primary;
-    width: 500px;
+    width: 50%;
+    border: 0.15rem solid $primary;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1rempx;
 }
 
 .frame4-move {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #FF7B7B;
+    fill: $primary;
     width: 5vmax;
     z-index: -1;
     animation: move 10s ease-in-out infinite;
@@ -93,7 +100,7 @@ hr {
     position: absolute;
     bottom: 10;
     left: 0;
-    fill: #FF7B7B;
+    fill: $primary;
     width: 5vmax;
     z-index: -1;
     animation: move2 10s ease-in-out infinite;
@@ -104,57 +111,13 @@ hr {
     position: absolute;
     top: 100;
     right: 0;
-    fill: #FF7B7B;
+    fill: $primary;
     width: 5vmax;
     z-index: -1;
     animation: move2 10s ease-in-out infinite;
     transform-origin: 50% 50%;
 }
 
-@media screen and (max-width: 1150px) {
-    .frame2 {
-        display: block;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        border-radius: 20px;
-        background-color: #FFBEED;
-    }
-    .text-p {
-        width: 90%;
-        display: block;
-        float: none;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        font-size: 1.2rem;
-    }
-    hr {
-        border: 2px solid $primary;
-        width: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-    }
-    .text-h1 {
-        font-size: 32px;
-    }
-    .top-text {
-        color: white;
-        width: 80%;
-        padding-top: 20px;
-        padding-left: 100px;
-    }
-    .frame1 {
-        width: 20rem;
-    }
-    .sign-up {
-        margin-left: 10px;
-    }
-}
 
 //
 //-> Animations
