@@ -1,4 +1,5 @@
 import React from 'react'
+import api from '../api'
 import frame1 from '../../assets/frame1.svg'
 import frame2 from '../../assets/frame2.svg'
 import frame4 from '../../assets/frame4.svg'
@@ -14,6 +15,20 @@ export default function Landing() {
     const [name, setName] = React.useState('')
     const [email, setEmail] = React.useState('')
     const [question, setQuestion] = React.useState('')
+
+    const SignUp = () => {
+        api.post('signup', {
+            email
+        })
+    }
+
+    const Contact = () => {
+        api.post('contact', {
+            name,
+            email,
+            question
+        })
+    }
 
     return (
         <Container fluid style={{ 'marginTop': '5.5rem' }}>
@@ -31,7 +46,7 @@ export default function Landing() {
                             onChange={e => setSignUp(e.target.value)}
                             required
                         />
-                        <button className='sign-up'>Sign up</button>
+                        <button className='sign-up' onClick={SignUp}>Sign up</button>
                     </div>
                     <div>
                         <h5 className='text-highlight'>Signup for our newsletter</h5>
@@ -109,7 +124,7 @@ export default function Landing() {
                             onChange={e => setQuestion(e.target.value)}
                             required
                         />
-                        <button className='send-message mt-3'>SEND MESSAGE</button>
+                        <button className='send-message mt-3' onClick={Contact}>SEND MESSAGE</button>
                     </form>
                 </Col>
                 <Col lg={6}>
