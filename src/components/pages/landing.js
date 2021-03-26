@@ -1,5 +1,5 @@
 import React from 'react'
-import frame1 from '../../assets/frame1.svg'
+import landingimg from '../../assets/landing-img.svg'
 import frame5 from '../../assets/frame5.svg'
 import frame6 from '../../assets/frame6.svg'
 import app from '../../assets/app.svg'
@@ -11,8 +11,11 @@ import appstorebadge from '../../assets/appstore-badge.svg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import '../styles/landing.scss'
 import axios from 'axios'
+
+import '../styles/landing.scss'
+
+
 
 export default function Landing() {
     const [signUp, setSignUp] = React.useState('')
@@ -21,7 +24,7 @@ export default function Landing() {
     const [question, setQuestion] = React.useState('')
 
     const SignUp = async () => {
-        if (signUp === '' || signUp === null){
+        if (signUp === '' || signUp === null) {
             return
         }
         await axios({
@@ -34,7 +37,7 @@ export default function Landing() {
     }
 
     const Contact = async () => {
-        if (name === '' || name === null || email === "" || email === null || question === "" || question === null){
+        if (name === '' || name === null || email === "" || email === null || question === "" || question === null) {
             return
         }
         await axios({
@@ -51,20 +54,28 @@ export default function Landing() {
     return (
         <Container fluid style={{ 'marginTop': '5.5rem' }}>
 
-            <Row className="justify-content-around">
-                <Col lg={4} className='mb-5'>
+            <Row className="justify-content-between">
+                <Col lg={5} className='mb-5'>
                     <div className='top-text'>
-                        <h1 className='text-h1'>Help make the world a safer place with Safetynet</h1>
+                        <h1 className='font-large font-weight-bolder'>Help make the world a safer place with Safetynet</h1>
                         <form>
-                            <input
-                                name="signUp"
-                                type="email"
-                                placeholder="Email Address"
-                                value={signUp}
-                                onChange={e => setSignUp(e.target.value)}
-                                required
-                            />
-                            <button className='sign-up' onClick={SignUp}>Sign up</button>
+                            <Row className='justify-content-between'>
+                                <Col lg={8}>
+                                    <input
+                                        name="signUp"
+                                        type="email"
+                                        placeholder="Email Address"
+                                        value={signUp}
+                                        onChange={e => setSignUp(e.target.value)}
+                                        required
+                                    />
+                                </Col>
+                                <Col lg={4}>
+                                    <button className='sign-up' onClick={SignUp}>Sign up!</button>
+                                </Col>
+                            </Row>
+
+
                         </form>
                     </div>
                     <div>
@@ -72,14 +83,14 @@ export default function Landing() {
                     </div>
                 </Col>
                 <Col lg={4}>
-                    <img className="frame1" src={frame1} alt="Frame1" />
+                    <img className="landing-img w-100" src={landingimg} alt="landing img" />
                 </Col>
             </Row>
             <div className='buffer'></div>
             <Row className='justify-content-around'>
                 <br />
                 <div className='how-it-works mb-4'>
-                    <h1 className='text-h1'>How it works</h1>
+                    <h2 className='font-weight-bold'>HOW IT WORKS</h2>
                     <hr />
                 </div>
                 <Row className='justify-content-around mt-5'>
@@ -88,20 +99,6 @@ export default function Landing() {
                             <img src={app} alt='app' width='100%' className={'how-it-works-img'} />
                             <p className={'text-muted text-left mt-3'}>Open the Safetynet app if you think you are in danger.</p>
                         </div>
-                    </Col>
-                    <Col lg={1}>
-                        <ul className={'loading-frame'}>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                        </ul>
                     </Col>
                     <Col lg={3} className='mb-3'>
                         <div className={'how-it-works-card'}>
@@ -112,20 +109,6 @@ export default function Landing() {
                                 will be sent an alert.
                             </p>
                         </div>
-                    </Col>
-                    <Col lg={1}>
-                        <ul className={'loading-frame'}>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                            <div className={'circle'}></div>
-                        </ul>
                     </Col>
                     <Col lg={3} className='mb-3'>
                         <div className={'how-it-works-card'}>
@@ -141,8 +124,8 @@ export default function Landing() {
             <div className='buffer'></div>
             <Row>
                 <div className='about-us'>
-                    <h1 className='text-h1'>About Us</h1>
-                    <p className='our-story'>OUR STORY</p>
+                    <h1 className='font-weight-bold'>ABOUT US</h1>
+                    <h4 className='our-story font-weight-bold text-muted'>OUR STORY</h4>
                     <p className='text-p'>
                         Safetynet is free and simple to use. Just download the app, and use when you feel that you need help.
                         If you like it - spread the word, so that people worldwide can feel safe and empowered while walking alone,
@@ -157,13 +140,14 @@ export default function Landing() {
             </Row>
             <div className={'buffer text-center'}>
 
-                <h1 className='text-h1' id='download'>Download now (Coming April 1st)</h1>
-                <Container fluid>
+                <h1 className='font-weight-bold' id='download'>DOWNLOAD NOW</h1>
+                <hr />
+                <Container fluid className={'mt-3'}>
                     <Row className='justify-content-center'>
-                        <Col lg={2}>
+                        <Col lg={3}>
                             <img width='100%' src={googleplaybadge} alt='android' />
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={3}>
                             <img width='80%' height='100%' src={appstorebadge} alt='ios' />
                         </Col>
                     </Row>
@@ -173,10 +157,11 @@ export default function Landing() {
 
             </div>
             <div className='buffer'></div>
-            <Row className='justify-content-around'>
+            <Row className='justify-content-around mb-5'>
                 <br />
                 <div className='questions'>
-                    <h1 className='text-h1'>HAVE ANY QUESTIONS?</h1>
+                    <h1 className='font-weight-bold'>HAVE ANY QUESTIONS?</h1>
+                    <hr />
                 </div>
                 <Col lg={4}>
                     <form>

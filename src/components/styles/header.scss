@@ -1,7 +1,8 @@
-$primary: #FFBEED;
-$secondary: #89CFF0;
-$highlight: #FB7878;
-$splash: #FFCA0D;
+$primary: #387cff;
+$secondary: #8438FF;
+$highlight: #FF7438;
+$splash: #38CFFF;
+
 
 .nav-bar-items {
     background: transparent;
@@ -13,10 +14,9 @@ $splash: #FFCA0D;
 }
 
 .navbar-logo {
-    color: $primary;
+    width: 40%;
     justify-content: start;
     cursor: pointer;
-    text-shadow: 2px 2px $highlight;
 }
 
 .nav-menu {
@@ -25,7 +25,7 @@ $splash: #FFCA0D;
     grid-gap: 0.8rem;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 80vw;
     justify-content: end;
     margin-right: 2rem;
 }
@@ -76,7 +76,7 @@ $splash: #FFCA0D;
 
     .nav-menu.active {
         display: flex;
-        background: $secondary;
+        background: $splash;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -97,12 +97,6 @@ $splash: #FFCA0D;
         border-radius: 0;
     }
 
-    .navbar-logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
-    }
 
     .menu-icon {
         display: block;
