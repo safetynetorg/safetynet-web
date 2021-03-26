@@ -58,7 +58,7 @@ export default function Landing() {
                 <Col lg={5} className='mb-5'>
                     <div className='top-text'>
                         <h1 className='font-large font-weight-bolder'>Help make the world a safer place with Safetynet</h1>
-                        <form>
+                        <form className='mt-4'>
                             <Row className='justify-content-between'>
                                 <Col lg={8}>
                                     <input
@@ -79,7 +79,7 @@ export default function Landing() {
                         </form>
                     </div>
                     <div>
-                        <h5 className='text-highlight'>Signup for our newsletter</h5>
+                        <h5 className='text-highlight mt-2'>Signup for our newsletter</h5>
                     </div>
                 </Col>
                 <Col lg={4}>
