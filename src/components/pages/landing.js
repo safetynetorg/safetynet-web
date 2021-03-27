@@ -11,10 +11,10 @@ import appstorebadge from '../../assets/appstore-badge.svg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import axios from 'axios'
 
 import '../styles/landing.scss'
-
+import signUpService from '../../services/sign_up.js'
+import emailService from '../../services/email.js'
 
 
 export default function Landing() {
@@ -24,31 +24,11 @@ export default function Landing() {
     const [question, setQuestion] = React.useState('')
 
     const SignUp = async () => {
-        if (signUp === '' || signUp === null) {
-            return
-        }
-        await axios({
-            url: 'https://safetynet-server.herokuapp.com/signup',
-            method: 'post',
-            data: {
-                'email': signUp
-            },
-        })
+        await signUpService(signUp)
     }
 
     const Contact = async () => {
-        if (name === '' || name === null || email === "" || email === null || question === "" || question === null) {
-            return
-        }
-        await axios({
-            url: 'https://safetynet-server.herokuapp.com/contact',
-            method: 'post',
-            data: {
-                'name': name,
-                'email': email,
-                'question': question
-            },
-        })
+        await emailService(name, email, question)
     }
 
     return (
@@ -74,8 +54,6 @@ export default function Landing() {
                                     <button className='sign-up' onClick={SignUp}>Sign up!</button>
                                 </Col>
                             </Row>
-
-
                         </form>
                     </div>
                     <div>
