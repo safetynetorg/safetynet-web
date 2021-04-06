@@ -1,9 +1,10 @@
 import { Component } from 'react'
+import { Container } from 'react-bootstrap'
 
 class TermsAndConditions extends Component {
     render() {
         return (
-            <div>
+            <Container>
                 <strong>Terms &amp; Conditions</strong> <p>
                     By downloading or using the app, these terms will
                     automatically apply to you – you should make sure therefore
@@ -107,7 +108,7 @@ class TermsAndConditions extends Component {
                     Terms and Conditions, do not hesitate to contact us
                     at help.safetynetorg@gmail.com.
                 </p>
-            </div>
+            </Container>
 
         )
     }
