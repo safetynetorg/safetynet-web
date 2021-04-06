@@ -1,21 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
+$primary: #387cff;
+$secondary: #8438FF;
+$highlight: #FF7438;
+$splash: #38CFFF;
+$light-outer-shadow: 1px 2px 4px lightgrey;
+$dark-outer-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$form-input-bg: #eeeef3;
+$hover-border: 0 0 0 2px $splash;
+$inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p{
-    line-height: 2;
+p {
+  line-height: 2;
 }
-
-
 
 body {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #f2f2f2;
+}
+
+.inner-shadow {
+  box-shadow: $inner-shadow;
+}
+
+.dark-outer-shadow {
+  box-shadow: $dark-outer-shadow;
+}
+
+.light-outer-shadow {
+  box-shadow: $dark-outer-shadow;
+}
+
+.img-box {
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.img-box img {
+  width: 100%;
+  border: 10px solid transparent;
+  border-radius: 5px;
+}
+
+.font-large {
+  font-size: 4rem;
 }

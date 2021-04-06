@@ -6,8 +6,8 @@ export default async function emailService(name, email, question){
         return
     }
     await axios({
-        //url: 'https://safetynet-server.herokuapp.com/contact',
-        url: 'http://localhost:8080/contact',
+        url: 'https://safetynet-server.herokuapp.com/contact',
+        //url: 'http://localhost:8080/contact',
         method: 'post',
         data: {
             'name': name,

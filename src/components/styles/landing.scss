@@ -1,12 +1,4 @@
-$primary: #387cff;
-$secondary: #8438FF;
-$highlight: #FF7438;
-$splash: #38CFFF;
-$light-outer-shadow: 1px 2px 4px lightgrey;
-$dark-outer-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-$form-input-bg: #eeeef3;
-$hover-border: 0 0 0 2px $splash;
-$inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+@import './app.scss';
 
 @mixin line {
     background-color: $primary;
@@ -15,33 +7,6 @@ $inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
     position: relative;
     vertical-align: middle;
     width: 50%;
-}
-
-.inner-shadow{
-    box-shadow: $inner-shadow;
-}
-
-.dark-outer-shadow{
-    box-shadow: $dark-outer-shadow;
-}
-
-.light-outer-shadow{
-    box-shadow: $dark-outer-shadow;
-}
-
-.img-box{
-    padding: 2rem;
-    border-radius: 5px;
-}
-
-.img-box img {
-    width: 100%;
-    border: 10px solid transparent;
-    border-radius: 5px;
-}
-
-.font-large{
-    font-size: 4rem;
 }
 
 .container-fluid{

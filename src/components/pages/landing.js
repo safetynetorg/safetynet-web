@@ -24,6 +24,7 @@ export default function Landing() {
     const [question, setQuestion] = React.useState('')
 
     const SignUp = async () => {
+        console.log("ok")
         await signUpService(signUp)
     }
 
